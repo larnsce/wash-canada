@@ -1,9 +1,10 @@
-# Website and course material for "Open Science Tools - authoring and publishing workflows for collaborative scientific writing"
+# Website and course material for "Module 5 WASH Canada" 
+
+## Open Science Tools - authoring and publishing workflows for collaborative scientific writing
 
 **Dates**
 
-- 17th October 2023, 08:30 am to 12:30 pm
-- 24th October 2023, 08:30 am to 12:30 pm
+- 25th May 2023, 06:00 to 07:00 pm CEST
 
 **Instructor**
 
@@ -13,7 +14,9 @@
 
 As the expectations of researchers increase, publishing reproducible
 scientific articles becomes essential. However, choosing tools for these
-tasks can be difficult. This course aims to guide researchers through
+tasks can be difficult. 
+
+This 1-hour module aims to guide researchers through
 these challenges by introducing a workflow that utilizes Git, GitHub,
 and the Quarto scientific and technical publishing system for
 collaborative scientific writing.

@@ -1,0 +1,47 @@
+---
+title: "WASH Canada - Module 5"
+subtitle: "Open Science Tools - authoring and publishing workflows for collaborative scientific writing"
+author: "Lars Schöbitz"
+format: 
+  revealjs: 
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    logo: img/ghe-logo.png
+    footer: "https://larnsce.github.io/wash-canada/"
+editor: source
+execute:
+  freeze: auto
+params:
+    week: 1
+---
+
+<script defer data-domain="https://larnsce.github.io/wash-canada/" src="https://plausible.io/js/plausible.js"></script>
+
+```{r}
+#| include: false
+library(countdown)
+library(magrittr)
+```
+
+# Welcome! `r emo::ji("wave")`  {background-color="#0F4C81"}
+
+## Meet the lecturer
+
+::: columns
+
+::: {.column width="50%"}
+
+**Lars Schöbitz (he/him)** 
+
+![](img/lars_schoebitz_profile_photo.jpg){fig-alt="Headshot of Lars Schöbitz" fig-align="center"}
+:::
+
+::: {.column width="50%"}
+- Environmental Engineer  
+- Open Science Specialist at ETH Zurich
+- Independent Instructor for Data Science with R  
+- Twitter: [@larnsce](https://twitter.com/larnsce)
+:::
+:::
+
