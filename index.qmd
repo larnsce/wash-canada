@@ -35,7 +35,7 @@ Prior to the course, learners are expected to have:
 1.  Completed pre-course survey by **22nd May 2023**:
     [https://forms.gle/ArxXNocMcSHZ72bE7](https://forms.gle/ArxXNocMcSHZ72bE7)
 
-2.  A free account on https://posit.cloud/ (or login with GitHub)
+2.  A free account on [https://posit.cloud/](https://posit.cloud/) (or login with GitHub)
 
 3.  A browser that is one of Mozilla Firefox, Safari, Google Chrome,
     Arc, Microsoft Edge (not the Internet Explorer)
