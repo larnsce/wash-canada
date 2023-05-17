@@ -11,9 +11,9 @@ website:
       these challenges by introducing a workflow that utilizes Git, GitHub,
       and the Quarto scientific and technical publishing system for collaborative
       scientific writing."
-  site-url: "https://ost-hs23.github.io/website/"
+  site-url: "https://larnsce.github.io/wash-canada/"
 
-  repo-url: https://github.com/ost-hs23/website
+  repo-url: https://github.com/larnsce/wash-canada
   repo-actions: [edit, issue]
 
   page-footer:
@@ -28,8 +28,8 @@ website:
     align: center
     tools:
       - icon: github
-        href: https://github.com/ost-hs23/
-        text: "GitHub organization"
+        href: https://github.com/larnsce/wash-canada
+        text: "GitHub Repository"
     style: "docked"
     search: false
     collapse-level: 1
