@@ -1,5 +1,82 @@
 [
   {
+    "objectID": "weeks/wk-00-template.html#slides",
+    "href": "weeks/wk-00-template.html#slides",
+    "title": "Add title",
+    "section": "Slides",
+    "text": "Slides"
+  },
+  {
+    "objectID": "weeks/wk-00-template.html#readings",
+    "href": "weeks/wk-00-template.html#readings",
+    "title": "Add title",
+    "section": "Readings",
+    "text": "Readings"
+  },
+  {
+    "objectID": "weeks/wk-00-template.html#homework-assignment",
+    "href": "weeks/wk-00-template.html#homework-assignment",
+    "title": "Add title",
+    "section": "Homework assignment",
+    "text": "Homework assignment"
+  },
+  {
+    "objectID": "weeks/wk-00-template.html#learning-reflectio",
+    "href": "weeks/wk-00-template.html#learning-reflectio",
+    "title": "Add title",
+    "section": "Learning reflectio",
+    "text": "Learning reflectio"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Overview",
+    "section": "",
+    "text": "Dates\n\n25th May 2023, 06:00 to 07:00 pm CEST\n\nLocation\n\ninvited Zoom lecture\n\nInstructor\n\nLars Schöbitz - Global Health Engineering - ETH Zurich"
+  },
+  {
+    "objectID": "index.html#details",
+    "href": "index.html#details",
+    "title": "Overview",
+    "section": "",
+    "text": "Dates\n\n25th May 2023, 06:00 to 07:00 pm CEST\n\nLocation\n\ninvited Zoom lecture\n\nInstructor\n\nLars Schöbitz - Global Health Engineering - ETH Zurich"
+  },
+  {
+    "objectID": "index.html#prerequisites-notice",
+    "href": "index.html#prerequisites-notice",
+    "title": "Overview",
+    "section": "Prerequisites / Notice",
+    "text": "Prerequisites / Notice\nPrior to the course, learners are expected to have:\n\nCompleted pre-course survey by 22nd May 2023: https://forms.gle/ArxXNocMcSHZ72bE7\nA free account on https://posit.cloud/ (or login with GitHub)\nA browser that is one of Mozilla Firefox, Safari, Google Chrome, Arc, Microsoft Edge (not the Internet Explorer)\nAccess to a laptop or desktop computer (you won’t be able to do this on a phone or tablet)\nRead the following paper: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510\n\nPrior experience in a programming language is not required for this module, but learners who have worked with data science tools such as R, RStudio IDE, Jupyter Notebooks, Python, or VS Code may have an advantage and gain the most from the material."
+  },
+  {
+    "objectID": "index.html#abstract",
+    "href": "index.html#abstract",
+    "title": "Overview",
+    "section": "Abstract",
+    "text": "Abstract\nAs the expectations of researchers increase, publishing reproducible scientific articles becomes essential. However, choosing tools for these tasks can be difficult.\nThis 1-hour module aims to guide researchers through these challenges by introducing the Quarto scientific and technical publishing system for collaborative scientific writing."
+  },
+  {
+    "objectID": "index.html#objective",
+    "href": "index.html#objective",
+    "title": "Overview",
+    "section": "Objective",
+    "text": "Objective\nThis module has the following learning objective:\nLearn to use the Quarto file format and the RStudio IDE visual editing mode to produce scholarly documents with citations, footnotes, cross-references, figures, and tables."
+  },
+  {
+    "objectID": "index.html#content",
+    "href": "index.html#content",
+    "title": "Overview",
+    "section": "Content",
+    "text": "Content\nThis module offers researchers a hands-on opportunity to learn open source tools and platforms that are accessible beyond institutional employment. The participatory live coding teaching technique involves an instructor writing and narrating code as they teach, and inviting learners to write and execute the same code.\nDuring the module, participants will learn how to use the Quarto file format to prepare scholarly documents, including slides, and scientific reports.\nWhile the course will introduce commonly used tools in software development, they will not be explained in great detail. Instead, the goal is to expose learners to the tools and concepts, requiring openness to new ideas."
+  },
+  {
+    "objectID": "index.html#lecture-notes",
+    "href": "index.html#lecture-notes",
+    "title": "Overview",
+    "section": "Lecture notes",
+    "text": "Lecture notes\nAll lecture notes are on this public website."
+  },
+  {
     "objectID": "slides/sd-01.html#meet-the-lecturer",
     "href": "slides/sd-01.html#meet-the-lecturer",
     "title": "WASH Canada - Module 5",

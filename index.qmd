@@ -9,40 +9,63 @@ execute:
   warning: false
 ---
 
+```{=html}
 <script defer data-domain="larnsce.github.io/wash-canada" src="https://plausible.io/js/script.js"></script>
-
+```
 ## Details
 
 **Dates**
 
-- 25th May 2023, 06:00 to 07:00 pm CEST
+-   25th May 2023, 06:00 to 07:00 pm CEST
 
 **Location**
 
-- Invited Zoom lecture
+-   invited Zoom lecture
 
 **Instructor**
 
-- [Lars Schöbitz](https://ghe.ethz.ch/about/people/person-detail.MjkyODc2.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) - [Global Health Engineering - ETH Zurich](https://ghe.ethz.ch/)
+-   [Lars
+    Schöbitz](https://ghe.ethz.ch/about/people/person-detail.MjkyODc2.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) -
+    [Global Health Engineering - ETH Zurich](https://ghe.ethz.ch/)
 
+## Prerequisites / Notice
+
+Prior to the course, learners are expected to have:
+
+1.  Completed pre-course survey by **22nd May 2023**:
+    https://forms.gle/ArxXNocMcSHZ72bE7
+
+2.  A free account on https://posit.cloud/ (or login with GitHub)
+
+3.  A browser that is one of Mozilla Firefox, Safari, Google Chrome,
+    Arc, Microsoft Edge (not the Internet Explorer)
+
+4.  Access to a laptop or desktop computer (you won't be able to do this
+    on a phone or tablet)
+
+5.  Read the following paper:
+    https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510
+
+Prior experience in a programming language is not required for this
+module, but learners who have worked with data science tools such as R,
+RStudio IDE, Jupyter Notebooks, Python, or VS Code may have an advantage
+and gain the most from the material.
 
 ## Abstract
 
 As the expectations of researchers increase, publishing reproducible
 scientific articles becomes essential. However, choosing tools for these
-tasks can be difficult. 
+tasks can be difficult.
 
-This 1-hour module aims to guide researchers through
-these challenges by introducing the Quarto scientific and technical publishing system for
+This 1-hour module aims to guide researchers through these challenges by
+introducing the Quarto scientific and technical publishing system for
 collaborative scientific writing.
 
 ## Objective
 
-This module has the following learning objectives
+This module has the following learning objective:
 
-1.  Learn to use the Quarto file format and the RStudio IDE visual
-    editing mode to produce scholarly documents with citations,
-    footnotes, cross-references, figures, and tables.
+Learn to use the Quarto file format and the RStudio IDE visual editing mode to produce scholarly documents with citations, footnotes, cross-references, figures, and tables.
 
 ## Content
 
@@ -52,8 +75,8 @@ employment. The participatory live coding teaching technique involves an
 instructor writing and narrating code as they teach, and inviting
 learners to write and execute the same code.
 
-During the, participants will learn how to use the Quarto file
-format to prepare scholarly documents, including slides, and scientific reports. 
+During the module, participants will learn how to use the Quarto file format to
+prepare scholarly documents, including slides, and scientific reports.
 
 While the course will introduce commonly used tools in software
 development, they will not be explained in great detail. Instead, the
@@ -63,25 +86,3 @@ to new ideas.
 ## Lecture notes
 
 All lecture notes are on this public website.
-
-## Prerequisites / Notice
-
-Prior to the course, learners are expected to have:
-
-1.  A browser that is one of Mozilla Firefox,
-    Safari, Google Chrome, Arc, Microsoft Edge (just not the Internet
-    Explorer)
-    
-2.  Access to a laptop or desktop computer  (you won't be able to do this on a phone or tablet)
-
-3.  A free account on https://posit.cloud/ (or login with GitHub)
-
-4.  Read the following paper:
-    https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510
-    
-Prior experience in a programming language is not required for this
-module, but learners who have worked with data science tools such as R,
-RStudio IDE, Jupyter Notebooks, Python, or VS Code may have an advantage
-and gain the most from the material.
-
-

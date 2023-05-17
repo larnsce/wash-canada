@@ -17,8 +17,8 @@ scientific articles becomes essential. However, choosing tools for these
 tasks can be difficult. 
 
 This 1-hour module aims to guide researchers through
-these challenges by introducing a workflow that utilizes Git, GitHub,
-and the Quarto scientific and technical publishing system for
+these challenges by introducing a workflow that utilizes 
+the Quarto scientific and technical publishing system for
 collaborative scientific writing.
 
 ## Attribution
