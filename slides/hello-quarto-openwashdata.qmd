@@ -1,0 +1,450 @@
+---
+title: "WASH Canada - Module 5"
+subtitle: "Open Science Tools - authoring and publishing workflows for collaborative scientific writing"
+author: 
+  - name: Lars Schöbitz
+    email: lschoebitz@ethz.ch
+    affiliations:
+        - name: Global Health Engineering - ETH Zurich
+          url: https://ghe.ethz.ch/
+format: 
+  revealjs: 
+    theme: slides.scss
+    transition: fade
+    chalkboard: 
+      boardmarker-width: 5
+      buttons: false
+    logo: img/ghe-logo.png
+    footer: "https://larnsce.github.io/wash-canada/"
+bibliography: references.bib
+editor: source
+execute:
+  freeze: auto
+---
+
+```{=html}
+<script defer data-domain="https://larnsce.github.io/wash-canada/" src="https://plausible.io/js/plausible.js"></script>
+```
+```{r}
+#| include: false
+library(countdown)
+library(magrittr)
+```
+
+# Welcome! `r emo::ji("wave")` {background-color="#0F4C81"}
+
+## Meet the lecturer
+
+::: columns
+::: {.column width="50%"}
+**Lars Schöbitz (he/him)**
+
+![](img/lars_schoebitz_profile_photo.jpg){fig-alt="Headshot of Lars Schöbitz" fig-align="center"}
+:::
+
+::: {.column width="50%"}
+-   Environmental Engineer\
+-   Open Science Specialist at ETH Zurich
+-   Independent Instructor for Data Science with R\
+:::
+:::
+
+# Why Open Science? {background-color="#0F4C81"}
+
+
+##
+
+![](img/publisher-policies-01.drawio.svg)
+
+##
+
+![](img/publisher-policies-02.drawio.svg)
+
+##
+
+![](img/publisher-policies-03.drawio.svg)
+
+##
+
+![](img/publisher-policies-04.drawio.svg)
+
+##
+
+![](img/publisher-policies-05.drawio.svg)
+
+##
+
+![](img/publisher-policies-06.drawio.svg)
+
+##
+
+![](img/publisher-policies-07.drawio.svg)
+
+# What is Quarto? {background-color="#0F4C81"}
+
+##  {.centered auto-animate="true"}
+
+::: {style="margin-top: 50px; font-size: 2em; color: #0F4C81"}
+Quarto is a new, open-source,<br> scientific and technical<br> publishing system
+:::
+
+
+**the goal is to make the process of creating**<br> and collaborating dramatically better
+
+
+::: {.fragment .fade-up}
+![](img/horst_quarto_schematic.png){fig-align="center" width="1100px" fig-alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto."}
+:::
+
+::: footer
+Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by [Allison Horst](https://github.com/allisonhorst).
+
+:::
+
+## Quarto for literate programming
+
+::: r-stack
+
+![](img/qmd-knitr.jpeg){.fragment width="1800" fig-alt="diagram of converting a Qmd document via knitr/pandoc into markdown and then into output formats"}
+
+![](img/qmd-jupyter.jpeg){.fragment width="1800" fig-alt="diagram of converting a Quarto document via Jupyter/pandoc into markdown and then into output formats"}
+
+:::
+
+## What is a `.qmd`? {.smaller}
+
+> A Quarto document i.e. a `.qmd` is a plain text file
+
+. . .
+
+**Metadata (YAML)**
+
+:::: {.columns}
+
+::: {.column width="50%"}
+``` yaml
+format: html
+engine: knitr
+```
+
+:::
+
+::: {.column width="50%"}
+
+``` yaml
+format: html
+engine: jupyter
+```
+
+:::
+
+::::
+
+. . .
+
+**Code**
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+````code
+```{{r}}
+library(dplyr)
+
+mtcars |> 
+  dplyr::group_by(cyl) |> 
+  dplyr::summarize(mean = mean(mpg))
+```
+````
+
+:::
+
+::: {.column width="50%"}
+
+````code
+```{{python}}
+from siuba import _, group_by, summarize
+from siuba.data import mtcars
+(mtcars
+  >> group_by(_.cyl)
+  >> summarize(avg_mpg = _.mpg.mean())
+  )
+```
+````
+
+:::
+
+::::
+
+. . .
+
+**Text**
+
+``` markdown
+# Heading 1
+This is a sentence with some **bold text**, some *italic text* and an 
+![image](image.png){fig-alt="Alt text for this image"}.
+```
+
+## Quarto makes moving between formats straightforward {.smaller .takeaway}
+
+::: columns
+::: {.column width="33%"}
+::: fragment
+Document
+
+::: {.code-file .sourceCode .cell-code}
+{{< fa file >}} lesson-1.qmd
+:::
+
+``` yaml
+title: "Lesson 1"
+format: html
+```
+:::
+:::
+
+::: {.column width="33%"}
+::: fragment
+Presentation
+
+::: {.code-file .sourceCode .cell-code}
+{{< fa file >}} lesson-1.qmd
+:::
+
+``` yaml
+title: "Lesson 1"
+format: revealjs
+```
+:::
+:::
+
+::: {.column width="33%"}
+::: fragment
+Website
+
+::: {.code-file .sourceCode .cell-code}
+{{< fa file >}} \_quarto.yml
+:::
+
+``` yaml
+project:
+  type: website
+
+website: 
+  navbar: 
+    left:
+      - lesson-1.qmd
+```
+:::
+:::
+:::
+
+::: notes
+-   It is traightforward in Quarto to move between output formats
+-   As an educator, there are two things that are important to me
+    -   reproducibility, and
+    -   ease of transitiion between output formats
+-   I am using Quarto for everything, and it's finally the tool let's me go from one output type to anoher without the to change anything by the YAML metadata
+
+For example, here are common things I produce
+
+--\> a lesson in document form <br> --\> the same content in presentation form <br> --\> the same content on a page in a website,
+
+and you can see that all that needed to change going between these formats is a few lines in the yaml.
+
+No slide breaks to remove, no citation style to change, no headings to re-level. This ease of transition has freed up time to focus my time on content, and that, folks, is the dream!
+:::
+
+## Comfort of your own workspace
+
+::: r-stack
+![](https://quarto.org/docs/tools/images/rstudio-preview.png){.fragment width="1700px" fig-alt="A screenshot of a Quarto document rendered inside RStudio"}
+
+![](https://quarto.org/docs/tools/images/jupyterlab-preview.png){.fragment width="1700px" fig-alt="A screenshot of a Quarto document rendered inside JupyterLab"}
+
+![](https://quarto.org/docs/computations/images/python-vscode.png){.fragment width="1700px" fig-alt="A screenshot of a Quarto document rendered inside VSCode"}
+:::
+ 
+## Posit Cloud & RStudio IDE 
+
+![](img/screenshot-posit-cloud.png){fig-alt="A screenshot of Posit Cloud Workspace (Your Workspace)"}
+
+## Posit Cloud & RStudio IDE 
+
+![](img/screenshot-posit-cloud-temp-copy.png){ fig-alt="A screenshot of Posit Cloud Workspace deploying a project"}
+
+## Posit Cloud & RStudio IDE 
+
+![](img/screenshot-posit-cloud-rstudio.png){fig-alt="A screenshot of Posit Cloud Workspace with an open project in the RStudio IDE."}
+
+# Let's say hello to Quarto {background-color="#0F4C81"}
+
+## Open this link
+
+https://posit.cloud/content/6021709
+
+
+## More resources for Quarto
+
+-   Video: [Reproducible authoring with Quarto](https://youtu.be/6p4vOKS6Xls)
+-   Video: [Openscapes: Hello Quarto with NASA Openscapes, RLadies Santa Barbara, and JJ Allaire](https://youtu.be/azVAl343CIU)
+-   Quarto documentation: [quarto.org](https://quarto.org/)
+-   Quarto gallery: [quarto.org/docs/gallery](https://quarto.org/docs/gallery/)
+-   Quarto tip a day: [rstd.io/quartotip](https://rstd.io/quartotip)
+
+# openwashdata {background-color="#5b195b"}
+
+## [openwashdata]{.fg style="--col: #5b195b"}
+
+- Receive **credit** for work that is not a scientific paper
+- Give **recognition** to those that support your work
+- Tell **stories** with data that haven’t yet been told
+- Meet **people** that care about data and code being open and reusable
+
+::: footer
+
+[https://openwashdata.org/](https://openwashdata.org/)
+
+:::
+
+# The Opportunity {background-color="#5b195b"}
+
+## Journal Articles
+
+```{r}
+knitr::include_graphics("img/screenshot-supplementary-data-ms-word-01.png")
+```
+
+::: footer
+Screenshot from @greene2021
+:::
+
+## Journal Articles
+
+```{r}
+knitr::include_graphics("img/screenshot-supplementary-data-ms-word-02.png")
+```
+
+::: footer
+Screenshot from @greene2021
+:::
+
+# The Journey {background-color="#5b195b"}
+
+## 
+
+![](img/openwashdata-journey.drawio-01.svg)
+
+## 
+
+![](img/openwashdata-journey.drawio-02.svg)
+
+## 
+
+![](img/openwashdata-journey.drawio-03.svg)
+
+## 
+
+![](img/openwashdata-journey.drawio-04.svg)
+
+## 
+
+![](img/openwashdata-journey.drawio-05.svg)
+
+## 
+
+![](img/openwashdata-journey.drawio-06.svg)
+
+## 
+
+![](img/openwashdata-journey.drawio-07.svg)
+
+## 
+
+![](img/openwashdata-journey.drawio-08.svg)
+
+## 
+
+![](img/openwashdata-journey.drawio-09.svg)
+
+## 
+
+![](img/openwashdata-journey.drawio-10.svg)
+
+## 
+
+![](img/openwashdata-journey.drawio-11.svg)
+
+## 
+
+![](img/openwashdata-journey.drawio-12.svg)
+
+## 
+
+![](img/openwashdata-journey.drawio-13.svg)
+
+## 
+
+![](img/openwashdata-journey.drawio-14.svg)
+
+# The Product {background-color="#5b195b"}
+
+## [What does final look like?]{.fg style="--col: #5b195b"}
+
+[
+![](img/screenshot-durbanplasticwaste-site.png){fig-alt="Screenshot of the durbanplasticwaste R package documentation homepage at https://global-health-engineering.github.io/durbanplasticwaste/." fig-align="center"}
+](https://global-health-engineering.github.io/durbanplasticwaste/)
+
+::: footer
+[durbanplasticwaste documentation website](https://global-health-engineering.github.io/durbanplasticwaste/) by @bergen_raul_2023_7708756 built with [pkgdown](https://pkgdown.r-lib.org/)
+:::
+
+# Engage {background-color="#5b195b"}
+
+## [Our channels]{.fg style="--col: #5b195b"}
+
+::: {.incremental}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+**One-way communication**
+
+- Website: [openwashdata.org](https://openwashdata.org/)
+- Newsletter: [buttondown.email/openwashdata](https://buttondown.email/openwashdata)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="47.5%"}
+**Two-way engagement**
+
+- Instant messaging: [Matrix](https://matrix.org/docs/projects/try-matrix-now) (e.g. with Element chat client)  
+- Submit data ideas: [github.com/openwashdata/data/issues](https://github.com/openwashdata/data/issues)
+- Social media: probably none
+:::
+
+::::
+
+:::
+
+# Thanks! `r emo::ji("sunflower")` {background-color="#5b195b"}
+
+## Thanks `r emo::ji("sunflower")` {.disable-layout}
+
+A large proportion of these slides are taken from [Mine Çetinkaya Rundel's "Hello Quarto" presentation](https://mine.quarto.pub/hello-quarto/#/hello-quarto-title) & [Thomas Mock's "Quarto for the Curious" presentation](https://jthomasmock.github.io/quarto-presentation/#/TitleSlide)
+
+Project openwashdata is supported by the  [Open Research Data Program of the ETH Board](https://ethrat.ch/en/eth-domain/open-research-data/).
+
+The slides were created via revealjs and Quarto: [https://quarto.org/docs/presentations/revealjs/](https://quarto.org/docs/presentations/revealjs/)
+
+You can [view source code of slides on GitHub](https://github.com/openwashdata/website/blob/main/pages/gallery/slides/cu-wash-symposium-2023/index.qmd)
+
+Or you can [download slides in PDF format](https://github.com/openwashdata/website/raw/main/pages/gallery/slides/cu-wash-symposium-2023/cu-wash-symposium-2023-openwashdata-lschoebitz.pdf)
+  
+This material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+
+# References

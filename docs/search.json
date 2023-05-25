@@ -81,6 +81,307 @@
     "href": "slides/sd-01.html#meet-the-lecturer",
     "title": "WASH Canada - Module 5",
     "section": "Meet the lecturer",
-    "text": "Meet the lecturer\n\n\nLars Schöbitz (he/him)\n\n\n\n\n\n\n\nEnvironmental Engineer\n\nOpen Science Specialist at ETH Zurich\nIndependent Instructor for Data Science with R\n\nTwitter: @larnsce\n\n\n\n\n\n\nhttps://larnsce.github.io/wash-canada/"
+    "text": "Meet the lecturer\n\n\nLars Schöbitz (he/him)\n\n\n\n\n\n\n\nEnvironmental Engineer\n\nOpen Science Specialist at ETH Zurich\nIndependent Instructor for Data Science with R"
+  },
+  {
+    "objectID": "slides/sd-01.html#publishers-code-and-data",
+    "href": "slides/sd-01.html#publishers-code-and-data",
+    "title": "WASH Canada - Module 5",
+    "section": "Publishers code and data",
+    "text": "Publishers code and data\n\ndiagrams"
+  },
+  {
+    "objectID": "slides/sd-01.html#so-what-is-quarto",
+    "href": "slides/sd-01.html#so-what-is-quarto",
+    "title": "WASH Canada - Module 5",
+    "section": "So, what is Quarto?",
+    "text": "So, what is Quarto?\n\nQuarto is a new, open-source, scientific and technical publishing system\n\n\nthe goal is to make the process of creating and collaborating dramatically better"
+  },
+  {
+    "objectID": "slides/sd-01.html#so-what-is-quarto-1",
+    "href": "slides/sd-01.html#so-what-is-quarto-1",
+    "title": "WASH Canada - Module 5",
+    "section": "So what is Quarto?",
+    "text": "So what is Quarto?\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc.\n\n\n\nquarto is a language agnostic command line interface (CLI)\n\nlars$ quarto --help"
+  },
+  {
+    "objectID": "slides/sd-01.html#what-is-quarto",
+    "href": "slides/sd-01.html#what-is-quarto",
+    "title": "WASH Canada - Module 5",
+    "section": "What is Quarto",
+    "text": "What is Quarto\n\ntoole for x, y, z"
+  },
+  {
+    "objectID": "slides/sd-01.html#quarto-for-literate-programming",
+    "href": "slides/sd-01.html#quarto-for-literate-programming",
+    "title": "WASH Canada - Module 5",
+    "section": "Quarto for literate programming",
+    "text": "Quarto for literate programming"
+  },
+  {
+    "objectID": "slides/sd-01.html#quarto-for-literate-programming-1",
+    "href": "slides/sd-01.html#quarto-for-literate-programming-1",
+    "title": "WASH Canada - Module 5",
+    "section": "Quarto for literate programming",
+    "text": "Quarto for literate programming"
+  },
+  {
+    "objectID": "slides/sd-01.html#so-what-is-a-.qmd",
+    "href": "slides/sd-01.html#so-what-is-a-.qmd",
+    "title": "WASH Canada - Module 5",
+    "section": "So what is a .qmd?",
+    "text": "So what is a .qmd?\n\nA Quarto document i.e. a .qmd is a plain text file\n\n\n\nMetadata (YAML)\n\n\n\nformat: html\nengine: knitr\n\nformat: html\nengine: jupyter\n\n\n\n\n\nCode\n\n\n\n```{r}\nlibrary(dplyr)\n\nmtcars |&gt; \n  dplyr::group_by(cyl) |&gt; \n  dplyr::summarize(mean = mean(mpg))\n```\n\n```{python}\nfrom siuba import _, group_by, summarize\nfrom siuba.data import mtcars\n(mtcars\n  &gt;&gt; group_by(_.cyl)\n  &gt;&gt; summarize(avg_mpg = _.mpg.mean())\n  )\n```\n\n\n\n\n\nText\n\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an \n![image](image.png){fig-alt=\"Alt text for this image\"}."
+  },
+  {
+    "objectID": "slides/sd-01.html#section",
+    "href": "slides/sd-01.html#section",
+    "title": "WASH Canada - Module 5",
+    "section": "",
+    "text": "Quarto is a new, open-source, scientific and technical publishing system\n\n\nthe goal is to make the process of creating and collaborating dramatically better"
+  },
+  {
+    "objectID": "slides/sd-01.html#one-install-batteries-included",
+    "href": "slides/sd-01.html#one-install-batteries-included",
+    "title": "WASH Canada - Module 5",
+    "section": "One install, “Batteries included”",
+    "text": "One install, “Batteries included”\n\nQuarto’s 1.0 release comes pre-installed with RStudio v2022.07.1 and beyond! Any language, same syntax and approach\n\n\n\n\n\nFeature\nR Markdown\nQuarto\n\n\n\n\nBasic Formats\n\nhtml_document\npdf_document\nword_document\n\n\nhtml\npdf\ndocx\n\n\n\nBeamer\n\nbeamer_presentation\n\n\nbeamer\n\n\n\nPowerPoint\n\npowerpoint_presentation\n\n\npptx\n\n\n\nHTML Slides\n\nxaringan\nrevealjs\n\n\nrevealjs\n\n\n\nAdvanced Layout\n\ntufte\ndistill\n\n\nQuarto Article Layout"
+  },
+  {
+    "objectID": "slides/sd-01.html#many-quarto-formats",
+    "href": "slides/sd-01.html#many-quarto-formats",
+    "title": "WASH Canada - Module 5",
+    "section": "Many Quarto formats",
+    "text": "Many Quarto formats\n\n\n\n\nFeature\nR Markdown\nQuarto\n\n\n\n\nCross References\n\nhtml_document2\npdf_document2\nword_document2\n\n\nQuarto Crossrefs\n\n\n\nWebsites & Blogs\n\nblogdown\ndistill\n\n\nQuarto Websites\nQuarto Blogs\n\n\n\nBooks\n\nbookdown\n\n\nQuarto Books\n\n\n\nInteractivity\nShiny Documents\nQuarto Interactive Documents\n\n\nPaged HTML\npagedown\nSummer 2022\n\n\nJournal Articles\nrticles\nSummer 2022\n\n\nDashboards\nflexdashboard\nFall 2022\n\n\n\n\n\n\n\nhttps://larnsce.github.io/wash-canada/"
+  },
+  {
+    "objectID": "slides/sd-01.html#quarto-makes-moving-between-formats-straightforward",
+    "href": "slides/sd-01.html#quarto-makes-moving-between-formats-straightforward",
+    "title": "WASH Canada - Module 5",
+    "section": "Quarto makes moving between formats straightforward",
+    "text": "Quarto makes moving between formats straightforward\n\n\n\nDocument\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: html\n\n\n\nPresentation\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: revealjs\n\n\n\nWebsite\n\n _quarto.yml\n\nproject:\n  type: website\n\nwebsite: \n  navbar: \n    left:\n      - lesson-1.qmd\n\n\n\n\n\nIt is traightforward in Quarto to move between output formats\nAs an educator, there are two things that are important to me\n\nreproducibility, and\nease of transitiion between output formats\n\nI am using Quarto for everything, and it’s finally the tool let’s me go from one output type to anoher without the to change anything by the YAML metadata\n\nFor example, here are common things I produce\n–&gt; a lesson in document form  –&gt; the same content in presentation form  –&gt; the same content on a page in a website,\nand you can see that all that needed to change going between these formats is a few lines in the yaml.\nNo slide breaks to remove, no citation style to change, no headings to re-level. This ease of transition has freed up time to focus my time on content, and that, folks, is the dream!"
+  },
+  {
+    "objectID": "slides/sd-01.html#comfort-of-your-own-workspace",
+    "href": "slides/sd-01.html#comfort-of-your-own-workspace",
+    "title": "WASH Canada - Module 5",
+    "section": "Comfort of your own workspace",
+    "text": "Comfort of your own workspace"
+  },
+  {
+    "objectID": "slides/sd-01.html#say-hello-to-quarto",
+    "href": "slides/sd-01.html#say-hello-to-quarto",
+    "title": "WASH Canada - Module 5",
+    "section": "Say hello to Quarto!",
+    "text": "Say hello to Quarto!\n\nVideo: Reproducible authoring with Quarto\nVideo: Openscapes: Hello Quarto with NASA Openscapes, RLadies Santa Barbara, and JJ Allaire\nQuarto documentation: quarto.org\nQuarto gallery: quarto.org/docs/gallery\nQuarto tip a day: rstd.io/quartotip\n\n\n\n\nhttps://larnsce.github.io/wash-canada/"
+  },
+  {
+    "objectID": "slides/sd-01.html#so-what-is-a-.qmd-smaller",
+    "href": "slides/sd-01.html#so-what-is-a-.qmd-smaller",
+    "title": "WASH Canada - Module 5",
+    "section": "So what is a .qmd? {smaller}",
+    "text": "So what is a .qmd? {smaller}\n\nA Quarto document i.e. a .qmd is a plain text file\n\n\nMetadata (YAML)\n\n\nformat: html\nengine: knitr\n\nformat: html\nengine: jupyter\n\n\n\n\nCode\n\n\n```{r}\nlibrary(dplyr)\n\nmtcars |&gt; \n  dplyr::group_by(cyl) |&gt; \n  dplyr::summarize(mean = mean(mpg))\n```\n\n```{python}\nfrom siuba import _, group_by, summarize\nfrom siuba.data import mtcars\n(mtcars\n  &gt;&gt; group_by(_.cyl)\n  &gt;&gt; summarize(avg_mpg = _.mpg.mean())\n  )\n```\n\n\n\n\nText\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an \n![image](image.png){fig-alt=\"Alt text for this image\"}."
+  },
+  {
+    "objectID": "slides/sd-01.html#publishing-system-1",
+    "href": "slides/sd-01.html#publishing-system-1",
+    "title": "WASH Canada - Module 5",
+    "section": "",
+    "text": "Quarto is a new, open-source, scientific and technical publishing system\n\n\nthe goal is to make the process of creating and collaborating dramatically better"
+  },
+  {
+    "objectID": "slides/sd-01.html#reproducibility",
+    "href": "slides/sd-01.html#reproducibility",
+    "title": "WASH Canada - Module 5",
+    "section": "Reproducibility",
+    "text": "Reproducibility\n\nDiagram"
+  },
+  {
+    "objectID": "slides/sd-01.html#section-1",
+    "href": "slides/sd-01.html#section-1",
+    "title": "WASH Canada - Module 5",
+    "section": "",
+    "text": "Patrick\n\nOne install, batteries included"
+  },
+  {
+    "objectID": "slides/sd-01.html#what-is-a-.qmd",
+    "href": "slides/sd-01.html#what-is-a-.qmd",
+    "title": "WASH Canada - Module 5",
+    "section": "What is a .qmd?",
+    "text": "What is a .qmd?\n\nA Quarto document i.e. a .qmd is a plain text file\n\n\nMetadata (YAML)\n\n\nformat: html\nengine: knitr\n\nformat: html\nengine: jupyter\n\n\n\n\nCode\n\n\n```{r}\nlibrary(dplyr)\n\nmtcars |&gt; \n  dplyr::group_by(cyl) |&gt; \n  dplyr::summarize(mean = mean(mpg))\n```\n\n```{python}\nfrom siuba import _, group_by, summarize\nfrom siuba.data import mtcars\n(mtcars\n  &gt;&gt; group_by(_.cyl)\n  &gt;&gt; summarize(avg_mpg = _.mpg.mean())\n  )\n```\n\n\n\n\nText\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an \n![image](image.png){fig-alt=\"Alt text for this image\"}."
+  },
+  {
+    "objectID": "slides/sd-01.html#more-resources-for-quarto",
+    "href": "slides/sd-01.html#more-resources-for-quarto",
+    "title": "WASH Canada - Module 5",
+    "section": "More resources for Quarto!",
+    "text": "More resources for Quarto!\n\nVideo: Reproducible authoring with Quarto\nVideo: Openscapes: Hello Quarto with NASA Openscapes, RLadies Santa Barbara, and JJ Allaire\nQuarto documentation: quarto.org\nQuarto gallery: quarto.org/docs/gallery\nQuarto tip a day: rstd.io/quartotip"
+  },
+  {
+    "objectID": "slides/sd-01.html#section-3",
+    "href": "slides/sd-01.html#section-3",
+    "title": "WASH Canada - Module 5",
+    "section": "",
+    "text": "https://larnsce.github.io/wash-canada/"
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#meet-the-lecturer",
+    "href": "slides/hello-quarto-openwashdata.html#meet-the-lecturer",
+    "title": "WASH Canada - Module 5",
+    "section": "Meet the lecturer",
+    "text": "Meet the lecturer\n\n\nLars Schöbitz (he/him)\n\n\n\n\n\n\n\nEnvironmental Engineer\n\nOpen Science Specialist at ETH Zurich\nIndependent Instructor for Data Science with R"
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#reproducibility",
+    "href": "slides/hello-quarto-openwashdata.html#reproducibility",
+    "title": "WASH Canada - Module 5",
+    "section": "Reproducibility",
+    "text": "Reproducibility\n\nDiagram"
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#section",
+    "href": "slides/hello-quarto-openwashdata.html#section",
+    "title": "WASH Canada - Module 5",
+    "section": "",
+    "text": "Quarto is a new, open-source, scientific and technical publishing system\n\n\nthe goal is to make the process of creating and collaborating dramatically better\n\n\n\n\n\n\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#quarto-for-literate-programming",
+    "href": "slides/hello-quarto-openwashdata.html#quarto-for-literate-programming",
+    "title": "WASH Canada - Module 5",
+    "section": "Quarto for literate programming",
+    "text": "Quarto for literate programming"
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#what-is-a-.qmd",
+    "href": "slides/hello-quarto-openwashdata.html#what-is-a-.qmd",
+    "title": "WASH Canada - Module 5",
+    "section": "What is a .qmd?",
+    "text": "What is a .qmd?\n\nA Quarto document i.e. a .qmd is a plain text file\n\n\nMetadata (YAML)\n\n\nformat: html\nengine: knitr\n\nformat: html\nengine: jupyter\n\n\n\n\nCode\n\n\n```{r}\nlibrary(dplyr)\n\nmtcars |&gt; \n  dplyr::group_by(cyl) |&gt; \n  dplyr::summarize(mean = mean(mpg))\n```\n\n```{python}\nfrom siuba import _, group_by, summarize\nfrom siuba.data import mtcars\n(mtcars\n  &gt;&gt; group_by(_.cyl)\n  &gt;&gt; summarize(avg_mpg = _.mpg.mean())\n  )\n```\n\n\n\n\nText\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an \n![image](image.png){fig-alt=\"Alt text for this image\"}."
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#quarto-makes-moving-between-formats-straightforward",
+    "href": "slides/hello-quarto-openwashdata.html#quarto-makes-moving-between-formats-straightforward",
+    "title": "WASH Canada - Module 5",
+    "section": "Quarto makes moving between formats straightforward",
+    "text": "Quarto makes moving between formats straightforward\n\n\n\nDocument\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: html\n\n\n\nPresentation\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: revealjs\n\n\n\nWebsite\n\n _quarto.yml\n\nproject:\n  type: website\n\nwebsite: \n  navbar: \n    left:\n      - lesson-1.qmd\n\n\n\n\n\nIt is traightforward in Quarto to move between output formats\nAs an educator, there are two things that are important to me\n\nreproducibility, and\nease of transitiion between output formats\n\nI am using Quarto for everything, and it’s finally the tool let’s me go from one output type to anoher without the to change anything by the YAML metadata\n\nFor example, here are common things I produce\n–&gt; a lesson in document form  –&gt; the same content in presentation form  –&gt; the same content on a page in a website,\nand you can see that all that needed to change going between these formats is a few lines in the yaml.\nNo slide breaks to remove, no citation style to change, no headings to re-level. This ease of transition has freed up time to focus my time on content, and that, folks, is the dream!"
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#comfort-of-your-own-workspace",
+    "href": "slides/hello-quarto-openwashdata.html#comfort-of-your-own-workspace",
+    "title": "WASH Canada - Module 5",
+    "section": "Comfort of your own workspace",
+    "text": "Comfort of your own workspace"
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#more-resources-for-quarto",
+    "href": "slides/hello-quarto-openwashdata.html#more-resources-for-quarto",
+    "title": "WASH Canada - Module 5",
+    "section": "More resources for Quarto",
+    "text": "More resources for Quarto\n\nVideo: Reproducible authoring with Quarto\nVideo: Openscapes: Hello Quarto with NASA Openscapes, RLadies Santa Barbara, and JJ Allaire\nQuarto documentation: quarto.org\nQuarto gallery: quarto.org/docs/gallery\nQuarto tip a day: rstd.io/quartotip"
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#openwashdata-1",
+    "href": "slides/hello-quarto-openwashdata.html#openwashdata-1",
+    "title": "WASH Canada - Module 5",
+    "section": "openwashdata",
+    "text": "openwashdata\n\nReceive credit for work that is not a scientific paper\nGive recognition to those that support your work\nTell stories with data that haven’t yet been told\nMeet people that care about data and code being open and reusable\n\n\nhttps://openwashdata.org/"
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#journal-articles",
+    "href": "slides/hello-quarto-openwashdata.html#journal-articles",
+    "title": "WASH Canada - Module 5",
+    "section": "Journal Articles",
+    "text": "Journal Articles\n\n\nScreenshot from Greene et al. (2021)"
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#journal-articles-1",
+    "href": "slides/hello-quarto-openwashdata.html#journal-articles-1",
+    "title": "WASH Canada - Module 5",
+    "section": "Journal Articles",
+    "text": "Journal Articles\n\n\nScreenshot from Greene et al. (2021)"
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#section-3",
+    "href": "slides/hello-quarto-openwashdata.html#section-3",
+    "title": "WASH Canada - Module 5",
+    "section": "",
+    "text": "https://larnsce.github.io/wash-canada/"
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#what-does-final-look-like",
+    "href": "slides/hello-quarto-openwashdata.html#what-does-final-look-like",
+    "title": "WASH Canada - Module 5",
+    "section": "What does final look like?",
+    "text": "What does final look like?\n\n\ndurbanplasticwaste documentation website by Bergen et al. (2023) built with pkgdown"
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#our-channels",
+    "href": "slides/hello-quarto-openwashdata.html#our-channels",
+    "title": "WASH Canada - Module 5",
+    "section": "Our channels",
+    "text": "Our channels\n\n\n\nOne-way communication\n\nWebsite: openwashdata.org\nNewsletter: buttondown.email/openwashdata\n\n\n\n\nTwo-way engagement\n\nInstant messaging: Matrix (e.g. with Element chat client)\n\nSubmit data ideas: github.com/openwashdata/data/issues\nSocial media: probably none"
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#thanks-1",
+    "href": "slides/hello-quarto-openwashdata.html#thanks-1",
+    "title": "WASH Canada - Module 5",
+    "section": "Thanks 🌻",
+    "text": "Thanks 🌻\nA large proportion of these slides are taken from Mine Çetinkaya Rundel’s “Hello Quarto” presentation & Thomas Mock’s “Quarto for the Curious” presentation\nProject openwashdata is supported by the Open Research Data Program of the ETH Board.\nThe slides were created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/\nYou can view source code of slides on GitHub\nOr you can download slides in PDF format\nThis material is licensed under Creative Commons Attribution Share Alike 4.0 International."
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#section-7",
+    "href": "slides/hello-quarto-openwashdata.html#section-7",
+    "title": "WASH Canada - Module 5",
+    "section": "",
+    "text": "Quarto is a new, open-source, scientific and technical publishing system\n\nthe goal is to make the process of creating and collaborating dramatically better\n\n\n\n\n\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#section-10",
+    "href": "slides/hello-quarto-openwashdata.html#section-10",
+    "title": "WASH Canada - Module 5",
+    "section": "",
+    "text": "##"
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#open-this-link",
+    "href": "slides/hello-quarto-openwashdata.html#open-this-link",
+    "title": "WASH Canada - Module 5",
+    "section": "Open this link",
+    "text": "Open this link\nhttps://posit.cloud/content/6021709"
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#section-9",
+    "href": "slides/hello-quarto-openwashdata.html#section-9",
+    "title": "WASH Canada - Module 5",
+    "section": "",
+    "text": "##"
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#section-8",
+    "href": "slides/hello-quarto-openwashdata.html#section-8",
+    "title": "WASH Canada - Module 5",
+    "section": "",
+    "text": "##"
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#posit-cloud-rstudio-ide",
+    "href": "slides/hello-quarto-openwashdata.html#posit-cloud-rstudio-ide",
+    "title": "WASH Canada - Module 5",
+    "section": "Posit Cloud & RStudio IDE",
+    "text": "Posit Cloud & RStudio IDE"
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#posit-cloud-rstudio-ide-1",
+    "href": "slides/hello-quarto-openwashdata.html#posit-cloud-rstudio-ide-1",
+    "title": "WASH Canada - Module 5",
+    "section": "Posit Cloud & RStudio IDE",
+    "text": "Posit Cloud & RStudio IDE"
+  },
+  {
+    "objectID": "slides/hello-quarto-openwashdata.html#posit-cloud-rstudio-ide-2",
+    "href": "slides/hello-quarto-openwashdata.html#posit-cloud-rstudio-ide-2",
+    "title": "WASH Canada - Module 5",
+    "section": "Posit Cloud & RStudio IDE",
+    "text": "Posit Cloud & RStudio IDE"
   }
 ]

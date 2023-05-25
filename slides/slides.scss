@@ -2,6 +2,9 @@
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
 
+
+// Custom colours and variables
+$openwashdata: #5b195b;
 $body-bg: #fff;
 $link-color: #42affa;
 $presentation-heading-font: Montserrat;
@@ -9,12 +12,36 @@ $presentation-heading-color: #0F4C81;
 $code-color: #ED6D37;
 $code-bg: #F5F5F5;
 $code-block-bg: #F5F5F5;
-$code-block-font-size: 0.9em;
-$presentation-font-size-root: 36px;
+$code-block-font-size: 0.8em;
+$presentation-font-size-root: 32px;
 
 /*-- scss:rules --*/
 
 .reveal .slide blockquote {
   border-left: 3px solid $text-muted;
   padding-left: 0.5em;
+}
+
+
+.reveal .takeaway h2 {
+  font-size: 1.7em;
+  font-weight: normal;
+  color: $presentation-heading-color;
+  text-align: center;
+}
+
+.reveal .takeaway {
+  text-align: center;
+}
+
+/* alignment */
+
+.reveal .centered {
+  text-align: center;
+}
+
+// color, alerts
+
+.fg {
+  color: var(--col, $openwashdata);
 }
