@@ -1,6 +1,8 @@
 ---
 title: "WASH Canada - Module 5"
 subtitle: "Open Science Tools - authoring and publishing workflows for collaborative scientific writing"
+date: today
+date-format: long
 author: 
   - name: Lars Schöbitz
     email: lschoebitz@ethz.ch
@@ -15,7 +17,7 @@ format:
       boardmarker-width: 5
       buttons: false
     logo: img/ghe-logo.png
-    footer: "https://larnsce.github.io/wash-canada/"
+    footer: "[larnsce.github.io/wash-canada/](https://larnsce.github.io/wash-canada/)"
 bibliography: references.bib
 editor: source
 execute:
@@ -441,9 +443,9 @@ Project openwashdata is supported by the  [Open Research Data Program of the ETH
 
 The slides were created via revealjs and Quarto: [https://quarto.org/docs/presentations/revealjs/](https://quarto.org/docs/presentations/revealjs/)
 
-You can [view source code of slides on GitHub](https://github.com/openwashdata/website/blob/main/pages/gallery/slides/cu-wash-symposium-2023/index.qmd)
+You can [view source code of slides on GitHub](https://github.com/larnsce/wash-canada/blob/main/slides/hello-quarto-openwashdata.qmd)
 
-Or you can [download slides in PDF format](https://github.com/openwashdata/website/raw/main/pages/gallery/slides/cu-wash-symposium-2023/cu-wash-symposium-2023-openwashdata-lschoebitz.pdf)
+Or you can [download slides in PDF format](https://github.com/larnsce/wash-canada/blob/main/slides/hello-quarto-openwashdata.pdf)
   
 This material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
 

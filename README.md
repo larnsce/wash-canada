@@ -26,4 +26,4 @@ collaborative scientific writing.
 The layout of the website and naming convention are based on [STA 210 at Duke University (Spring 2022)
 ](https://github.com/sta210-s22/website) by [Dr. Mine Çetinkaya-Rundel](https://mine-cr.com/).
 
-
+A large proportion of [the slides for the module](https://github.com/larnsce/wash-canada/blob/main/slides/hello-quarto-openwashdata.qmd) are taken from [Mine Çetinkaya Rundel's "Hello Quarto" presentation](https://mine.quarto.pub/hello-quarto/#/hello-quarto-title) & [Thomas Mock's "Quarto for the Curious" presentation](https://jthomasmock.github.io/quarto-presentation/#/TitleSlide)

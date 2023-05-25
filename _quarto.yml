@@ -36,6 +36,8 @@ website:
     contents:
       - href: index.qmd
         text: Course Overview
+      - href: slides/hello-quarto-openwashdata.qmd
+        text: Slides
 
 format:
   html:
