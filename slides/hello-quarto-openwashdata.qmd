@@ -12,6 +12,9 @@ author:
 format: 
   revealjs: 
     theme: slides.scss
+    pointer:
+      pointerSize: 26
+      color: '#5b195b'
     transition: fade
     chalkboard: 
       boardmarker-width: 5
@@ -27,9 +30,9 @@ execute:
 ```{=html}
 <script defer data-domain="https://larnsce.github.io/wash-canada/" src="https://plausible.io/js/plausible.js"></script>
 ```
+
 ```{r}
 #| include: false
-library(countdown)
 library(magrittr)
 ```
 

@@ -28,6 +28,7 @@ execute:
     Schöbitz](https://ghe.ethz.ch/about/people/person-detail.MjkyODc2.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) -
     [Global Health Engineering - ETH Zurich](https://ghe.ethz.ch/)
 
+
 ## Prerequisites / Notice
 
 Prior to the course, learners are expected to have:
